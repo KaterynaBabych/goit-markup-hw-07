@@ -463,19 +463,19 @@ address {
 }
 
 /* Секция Work чем мы занимаемся*/
-.section-work {
+.work__section {
   padding-bottom: 94px;
 }
-.work {
+.work__list {
   display: flex;
 }
-.work .item:not(:last-child) {
+.work__item:not(:last-child) {
   margin-right: 30px;
 }
-.item-work {
+.work__img {
   position: relative;
 }
-.work-title {
+.work__title {
   position: absolute;
   display: flex;
   justify-content: center;
