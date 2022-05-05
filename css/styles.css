@@ -65,21 +65,21 @@ address {
   align-items: center;
   border-bottom: 1px solid #ececec;
 }
-.logo-basic {
+.logo__basic {
   color: var(--acent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
 }
-.logo-footer {
+.logo__footer {
   color: var(--hero-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.38;
 }
-.logo-header {
+.logo__header {
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -602,28 +602,26 @@ address {
 }
 
 /* Футер */
-.footer-nav {
+.footer__nav {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-contact {
+.footer__contact {
   display: inline-flex;
 }
-.logo-footer {
+.logo__footer {
   padding-bottom: 20px;
 }
-.adress-navigator {
+.adress__navigator {
   padding-right: 70px;
 }
 
-.adress-nav,
-.mailto-nav,
-.tel-nav {
+.adress__nav {
   padding-bottom: 9px;
 }
-.adress {
+.adress__map {
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   font-size: 14px;
@@ -631,22 +629,22 @@ address {
   letter-spacing: 0.03em;
 }
 
-.mail-footer {
+.adress__mail {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 2.42;
   letter-spacing: 0.03em;
 }
-.tel-footer {
+.adress__tel {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 2.42;
   letter-spacing: 0.03em;
 }
-
-.social-network {
+/* Присоединяйтесь */
+.social-network__title {
   color: var(--hero-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -655,13 +653,13 @@ address {
   margin: 0;
   padding-top: 0;
 }
-.icon-social-network {
+.social-network__icon {
   display: inline-flex;
 }
-.icon-social-footer {
-  fill: #ffffff;
+.social-network__list:not(:last-child) {
+  margin-right: 10px;
 }
-.icon-soc-net {
+.social-network__link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -671,12 +669,12 @@ address {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-soc-net:hover,
-.icon-soc-net:focus {
+.social-network__link:hover,
+.social-network__link:focus {
   background-color: #2196f3;
 }
-.list-social-network:not(:last-child) {
-  margin-right: 10px;
+.social-network__link--color {
+  fill: #ffffff;
 }
 
 /* portfolio.html */
@@ -801,16 +799,24 @@ address {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Footer Подпишитесь на рассылку */
 .form-footer {
   margin-left: 93px;
 }
-.input-footer {
+
+.form-footer__input {
+  display: inline-flex;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
   padding-left: 16px;
   background-color: rgba(47, 48, 58, 1);
   color: rgba(255, 255, 255, 0.6);
 }
-
-.button-mail {
+.form-footer__button {
   width: 12.5rem;
   height: 3.125rem;
   margin-left: 12px;
@@ -828,7 +834,7 @@ address {
   letter-spacing: 0.06em;
 }
 
-.mailing-list {
+.form-footer__icon {
   position: absolute;
   top: 50%;
   right: 28px;
@@ -836,12 +842,4 @@ address {
   fill: var(--hero-text-color);
   align-items: center;
   transform: translateY(-50%);
-}
-.email-form input {
-  display: inline-flex;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 358px;
-  height: 50px;
-  border-radius: 4px;
 }
